@@ -1,5 +1,5 @@
 {% set name = "sagetex" %}
-{% set version = "3.3" %}
+{% set version = "3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sagemath/sagetex/releases/download/v{{ version }}/sagetex-{{ version }}.tar.gz
-  sha256: f1ebfacd18fbe99e157efbff3fce3b7ecfa1b8c9824b9b818b458b8a366f4584
+  sha256: 32b4243313d79e61351da917024ca3e8e3caf14c06611676234f56af3e7fdf49
 
 build:
   noarch: python
