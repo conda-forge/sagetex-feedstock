@@ -1,18 +1,18 @@
 {% set name = "sagetex" %}
-{% set version = "3.4" %}
+{% set version = "3.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/sagemath/sagetex/releases/download/v{{ version }}/sagetex-{{ version }}.tar.gz
-  sha256: 32b4243313d79e61351da917024ca3e8e3caf14c06611676234f56af3e7fdf49
+  url: https://github.com/sagemath/sagetex/archive/sagetex-{{ version }}.tar.gz
+  sha256: c77e73167fce0f1ff33441148de9538bdcc9b3a87f2a1447e3dd8ab8ca2179de
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'Embed code, results of computations, and plots from the Sage mathematics software suite into LaTeX documents'
+  summary: Embed code, results of computations, and plots from the Sage mathematics software suite into LaTeX documents
 
 extra:
   recipe-maintainers:
