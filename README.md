@@ -116,6 +116,3 @@ Feedstock Maintainers
 
 * [@conda-forge/sage](https://github.com/conda-forge/sage/)
 
-
-<!-- dummy commit to enable rerendering -->
-
