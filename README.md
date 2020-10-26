@@ -5,11 +5,9 @@ Home: http://github.com/sagemath/sagetex
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sagetex-feedstock/blob/master/LICENSE.txt)
 
 Summary: Embed code, results of computations, and plots from the Sage mathematics software suite into LaTeX documents
-
-
 
 Current build status
 ====================
