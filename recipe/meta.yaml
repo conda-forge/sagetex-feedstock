@@ -1,5 +1,5 @@
 {% set name = "sagetex" %}
-{% set version = "3.5" %}
+{% set version = "3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sagemath/sagetex/releases/download/v{{ version }}/sagetex-{{ version }}.tar.gz
-  sha256: 3a7454002ddff9bf862d139130c27de0416bbc2378e1f4de4eb50d805ee96779
+  sha256: 26df48534bb22c89874e7afd2ae211568c5a324c651eb2ac0c18580370de93f5
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   # Can't import sagetex without sage and sagetex is a dependency of sage
