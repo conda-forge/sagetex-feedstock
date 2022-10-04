@@ -1,13 +1,14 @@
 {% set name = "sagetex" %}
-{% set version = "3.6" %}
+{% set version = "3.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/sagemath/sagetex/releases/download/v{{ version }}/sagetex-{{ version }}.tar.gz
-  sha256: 26df48534bb22c89874e7afd2ae211568c5a324c651eb2ac0c18580370de93f5
+  # sagetex does not create actual GitHub releases with every tag so we need to download from the tags.
+  url: https://github.com/sagemath/sagetex/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: efc8bc023a4cd2eb557427c17e4c83082d244fdf33e94199b93536c769544236
 
 build:
   noarch: python
