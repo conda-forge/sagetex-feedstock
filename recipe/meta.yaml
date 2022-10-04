@@ -6,9 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  # sagetex does not create actual GitHub releases with every tag so we need to download from the tags.
-  url: https://github.com/sagemath/sagetex/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: efc8bc023a4cd2eb557427c17e4c83082d244fdf33e94199b93536c769544236
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sagetex-{{ version }}.tar.gz
+  sha256: 03162ec62cb86da13a747f982241af3e4f4cdd4d29fcba8fbb6c6982a9e906d9
 
 build:
   noarch: python
